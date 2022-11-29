@@ -1,2 +1,15 @@
+// ------------------UTILS STYLES----------------
+
+// ------------------BASE STYLES-----------------
 @import './base/common';
 @import './base/container';
+@import './base/_reset';
+// ------------------COMPONENTS STYLES-----------
+@import './components/_about.scss';
+@import './components/_apartments.scss';
+@import './components/_contacts.scss';
+@import './components/_footer.scss';
+@import './components/_gallery.scss';
+@import './components/_header.scss';
+@import './components/_hero.scss';
+@import './components/_infrastructure.scss';
