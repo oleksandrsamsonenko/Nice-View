@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nice view</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nice view</title>
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
+  <body>
+    <!-- header -->
+    <include src="./partials/header.html"></include>
 
-<body>
-  <!-- header -->
-  <include src="./partials/header.html"></include>
+    <!-- main -->
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/apartments.html"></include>
+      <include src="./partials/infrastructure.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
 
-  <!-- main -->
-  <main>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/apartments.html"></include>
-    <include src="./partials/infrastructure.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/contacts.html"></include>
-  </main>
-
-  <!-- footer -->
-  <include src="./partials/header.html"></include>
-</body>
-
+    <!-- footer -->
+    <include src="./partials/footer.html"></include>
+  </body>
 </html>
