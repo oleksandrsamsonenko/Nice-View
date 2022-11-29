@@ -3,13 +3,13 @@
 // ------------------BASE STYLES-----------------
 @import './base/common';
 @import './base/container';
-@import url('./base/_reset');
+@import './base/_reset';
 // ------------------COMPONENTS STYLES-----------
-@import url('./components/_about.scss');
-@import url('./components/_apartments.scss');
-@import url('./components/_contacts.scss');
-@import url('./components/_footer.scss');
-@import url('./components/_gallery.scss');
-@import url('./components/_header.scss');
-@import url('./components/_hero.scss');
-@import url('./components/_infrastructure.scss');
+@import './components/_about.scss';
+@import './components/_apartments.scss';
+@import './components/_contacts.scss';
+@import './components/_footer.scss';
+@import './components/_gallery.scss';
+@import './components/_header.scss';
+@import './components/_hero.scss';
+@import './components/_infrastructure.scss';
