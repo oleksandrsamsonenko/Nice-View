@@ -1,7 +1,7 @@
 .footer {
   color: $white;
-  //   background-color: $gorizontal-gradient;
-  background-color: rgb(67, 67, 75);
+  width: 100%;
+
   &--link {
     font-family: 'Inter';
     font-style: normal;
@@ -11,90 +11,138 @@
     color: $white;
   }
 }
+.footer__container {
+  background-color: rgb(67, 67, 75);
+  width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 1px solid red;
 
-.footer-wrapper {
-  @media screen and (min-width: 1280px) {
-    display: flex;
-    padding-left: 86px;
-    padding-right: 104px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    outline: 1px solid red;
+    padding-left: 32px;
+    padding-right: 32px;
   }
-  //   padding-top: 20px;
-  //   padding-bottom: 8px;
-  //   padding-left: 20px;
-  //   padding-right: 20px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+.footer__wrapper {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+  }
+}
+// new block
+.footer-logo {
+  display: none;
 
-  //   @media screen and (min-width: 768px) {
-  //     padding-left: 32px;
-  //     padding-right: 32px;
-  //   }
-}
-.footer__logo {
-  padding-top: 15px;
-}
-.logo {
-  &__link {
+  @media screen and (min-width: $tablet) {
     display: block;
-  }
-  &__icon {
-    fill: $white;
+    width: 25%;
   }
 }
+.footer-logo__link {
+  margin-left: 0px;
+  display: block;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 58px;
+  }
+}
+.footer-logo__icon {
+  fill: $white;
+}
+
 // new block
 .footer-navigation {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  &__title {
-    margin-bottom: 16px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+
+  @media screen and (min-width: $tablet) {
+    width: 25%;
   }
-  &__item:not(:last-child) {
+}
+.footer-navigation__title {
+  margin-bottom: 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+}
+.footer-navigation__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer-navigation__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: $tablet) {
     margin-bottom: 16px;
   }
 }
-
 // new block
 .footer-contacts {
+  width: 50%;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    width: 25%;
+  }
 }
 // new block
 .address {
   font-style: normal;
-  &__title {
+}
+.address__title {
+  margin-bottom: 16px;
+  margin-bottom: 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+}
+.address__item {
+  overflow-wrap: break-word;
+  &:not(:last-child) {
     margin-bottom: 16px;
   }
-  &__item {
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
 }
+
 // new block
 .footer-media {
   display: flex;
-  margin-bottom: 20px;
+  justify-content: end;
   margin-top: 28px;
-}
-// .footer-media__list {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: flex-start;
-// }
-.footer-media__item {
-  @media screen and (min-width: 1280px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-    //   display: flex;
-    //   &:not(:last-child) {
-    //     margin-right: 20px;
-    //   }
+  @media screen and (min-width: $tablet) {
+    width: 25%;
+    margin-top: 0;
   }
 }
+.footer-media__list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-right: 20px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 30px;
+    margin-right: 74px;
+  }
+}
+
 .footer-media__link {
   display: flex;
 }
@@ -104,9 +152,12 @@
 // new block
 .footer-privacy {
   display: flex;
-  //   justify-content: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 8px;
   &__descr {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     font-family: 'Roboto';
     font-style: normal;
@@ -114,8 +165,7 @@
     font-size: 14px;
     line-height: 1.21;
     text-align: center;
-    // color: #979797;
-    color: white;
+    color: #979797;
   }
 
   &__link {
@@ -125,7 +175,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
-    // text-align: center;
     text-decoration: underline;
     color: $white;
   }
