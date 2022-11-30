@@ -1,11 +1,7 @@
 .footer {
-  //   padding-top: 20px;
-  //   padding-bottom: 8px;
-  //   padding-left: 20px;
-  //   padding-right: 20px;
   color: $white;
-  background-color: $gorizontal-gradient;
-
+  //   background-color: $gorizontal-gradient;
+  background-color: rgb(67, 67, 75);
   &--link {
     font-family: 'Inter';
     font-style: normal;
@@ -17,22 +13,30 @@
 }
 
 .footer-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  //   gap: 40px;
-  justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
   @media screen and (min-width: 1280px) {
+    display: flex;
     padding-left: 86px;
     padding-right: 104px;
+  }
+  //   padding-top: 20px;
+  //   padding-bottom: 8px;
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+
+  //   @media screen and (min-width: 768px) {
+  //     padding-left: 32px;
+  //     padding-right: 32px;
+  //   }
+}
+.footer__logo {
+  padding-top: 15px;
+}
+.logo {
+  &__link {
+    display: block;
+  }
+  &__icon {
+    fill: $white;
   }
 }
 // new block
@@ -75,16 +79,24 @@
   margin-bottom: 20px;
   margin-top: 28px;
 }
-.footer-media__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
+// .footer-media__list {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
 .footer-media__item {
-  display: flex;
-  &:not(:last-child) {
-    margin-right: 20px;
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    //   display: flex;
+    //   &:not(:last-child) {
+    //     margin-right: 20px;
+    //   }
   }
+}
+.footer-media__link {
+  display: flex;
 }
 .footer-media__icon {
   fill: $white;
@@ -92,7 +104,7 @@
 // new block
 .footer-privacy {
   display: flex;
-  justify-content: center;
+  //   justify-content: center;
   &__descr {
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +114,8 @@
     font-size: 14px;
     line-height: 1.21;
     text-align: center;
-    color: #979797;
+    // color: #979797;
+    color: white;
   }
 
   &__link {
