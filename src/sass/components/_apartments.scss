@@ -2,27 +2,33 @@
   &__wrapper {
     background-color: $light-color;
 
-    @media screen and (min-width: 1280px) {
-      padding-left: 86px;
-      padding-right: 86px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (min-width:1280px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @media screen and (min-width:1280px) {
+      padding-left: 68px;
+      padding-right: 68px;
     }
   }
 
   &__title {
     font-size: 28px;
     margin-bottom: 28px;
+    text-align: start;
+    max-width: 280px;
 
-    @media screen and (max-width: 767px) {
-      max-width: 280px;
+    @media screen and (min-width:480px) {
+      max-width: 100%;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
       font-size: 40px;
       margin-bottom: 40px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      font-size: 40px;
     }
   }
 
@@ -35,23 +41,23 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 768px) {
+
+    @media screen and (min-width:768px) {
       flex-direction: row;
+      gap: 32px;
     }
   }
 
   &__item {
-    max-width: 280px;
     height: 383px;
+    width: calc((100% - 0 * 32px) / 1);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
       height: 393px;
-      flex-basis: 336px;
       width: calc((100% - 1 * 32px) / 2);
     }
 
-    @media screen and (min-width: 1280px) {
-      flex-basis: 360px;
+    @media screen and (min-width:1280px) {
       width: calc((100% - 2 * 35px) / 3);
     }
   }
@@ -79,38 +85,29 @@
   }
 
   &__subtitle {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: calc(34 / 28);
     color: $dark-color;
 
-    margin-bottom: 8px;
+    @media screen and (min-width:768px) {
+      font-size: 32px;
+    }
+
   }
 
   &__desc {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
     font-size: 20px;
     line-height: calc(26 / 20);
-    color: $main-color;
+
+    @media screen and (min-width:768px) {
+      font-size: 24px;
+    }
   }
 
   &__btn {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: $light-color;
-
-    width: 240px;
-    height: 54px;
-    background: $main-color;
-    border-radius: 16px;
-
-    align-items: center;
+    display: block;
+    margin: 0 auto;
   }
+
 }
