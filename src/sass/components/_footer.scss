@@ -1,11 +1,7 @@
 .footer {
   color: $white;
   width: 100%;
-  background-image: linear-gradient(
-    269.46deg,
-    #2d2a22 20.66%,
-    $main-color 85.22%
-  );
+  background-image: $gorizontal-gradient;
 
   &--link {
     font-family: 'Inter';
