@@ -1,4 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
 .section {
   padding-bottom: 100px;
 }
@@ -14,4 +15,6 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
