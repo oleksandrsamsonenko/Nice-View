@@ -12,15 +12,12 @@
   }
 }
 .footer__container {
-  background-color: rgb(67, 67, 75);
-  width: 480px;
   padding-left: 20px;
   padding-right: 20px;
-  outline: 1px solid red;
+  background-image: $gorizontal-gradient;
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
-    outline: 1px solid red;
     padding-left: 32px;
     padding-right: 32px;
   }
