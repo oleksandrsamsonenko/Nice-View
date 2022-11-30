@@ -2,21 +2,24 @@
   outline: 2px solid red;
   outline-offset: -2px;
 
-  max-width: $mobile;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  // mobile
+  @media screen and (min-width: 480px) {
+    max-width: $mobile;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
-    padding-right: 16px;
-    padding-left: 16px;
+    max-width: $tablet;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
-    padding-right: 15px;
-    padding-left: 15px;
+    max-width: $desktop;
+    padding-right: 68px;
+    padding-left: 68px;
   }
 }

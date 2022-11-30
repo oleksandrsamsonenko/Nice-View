@@ -1,119 +1,113 @@
 .apartments {
-    &__wrapper {
-        background-color: $light-color;
+  &__wrapper {
+    background-color: $light-color;
 
-        @media screen and (min-width:1200px) {
-            padding-left: 86px;
-            padding-right: 86px;
-        }
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (min-width:1280px) {
+      padding-left: 32px;
+      padding-right: 32px;
     }
 
-    &__title {
-        font-size: 28px;
-        margin-bottom: 28px;
+    @media screen and (min-width:1280px) {
+      padding-left: 68px;
+      padding-right: 68px;
+    }
+  }
 
-        @media screen and (max-width:767px) {
-            max-width: 280px;
-        }
+  &__title {
+    font-size: 28px;
+    margin-bottom: 28px;
+    text-align: start;
+    max-width: 280px;
 
-        @media screen and (min-width:768px) {
-            font-size: 40px;
-            margin-bottom: 40px;
-        }
-
-        @media screen and (min-width:1280px) {
-            font-size: 40px;
-        }
+    @media screen and (min-width:480px) {
+      max-width: 100%;
     }
 
-    &__list {
-        margin-bottom: 28px;
-        gap: 28px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    @media screen and (min-width:768px) {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 28px;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 
-        @media screen and (min-width:768px) {
-            flex-direction: row;
-        }
-        
+    @media screen and (min-width:768px) {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+
+  &__item {
+    height: 383px;
+    width: calc((100% - 0 * 32px) / 1);
+
+    @media screen and (min-width:768px) {
+      height: 393px;
+      width: calc((100% - 1 * 32px) / 2);
     }
 
-    &__item {
-        max-width: 280px;
-        height: 383px;
+    @media screen and (min-width:1280px) {
+      width: calc((100% - 2 * 35px) / 3);
+    }
+  }
 
-        @media screen and (min-width:768px) {
-            height: 393px;
-            flex-basis: 336px;
-            width: calc((100% - 1 * 32px) / 2);
-        }
+  &__link {
+    padding: 20px 32px;
+    border: 2px solid transparent;
 
-        @media screen and (min-width:1280px) {
-            flex-basis: 360px;
-            width: calc((100% - 2 * 35px) / 3);
-        }
+    &:hover,
+    &:focus {
+      border: 2px solid $main-color;
+      filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.15));
+      border-radius: 16px;
     }
 
-    &__link {
-        padding: 20px 32px;
-        border: 2px solid transparent;
-        
-        &:hover, &:focus {
-            border: 2px solid $main-color;
-            filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.15));
-            border-radius: 16px;
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 14px;
+  &__img {
+    height: 255px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    color: $dark-color;
+
+    @media screen and (min-width:768px) {
+      font-size: 32px;
     }
 
-    &__img {
-        height: 255px;
-        
+  }
+
+  &__desc {
+    font-size: 20px;
+    line-height: calc(26 / 20);
+
+    @media screen and (min-width:768px) {
+      font-size: 24px;
     }
+  }
 
-    &__subtitle {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: calc(34 / 28);
-        color: $dark-color;
-
-        margin-bottom: 8px;
-    }
-
-    &__desc {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: calc(26 / 20);
-        color: $main-color;
-    }
-
-    &__btn {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
-        color: $light-color;
-
-        width: 240px;
-        height: 54px;
-        background: $main-color;
-        border-radius: 16px;
-
-        align-items: center;
-    }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
 
 }
