@@ -1,19 +1,14 @@
 .apartments {
+  padding-top: 0;
+  background-color: $light-color;
+
   &__wrapper {
-    background-color: $light-color;
-
-    padding-left: 20px;
-    padding-right: 20px;
-
-    @media screen and (min-width:1280px) {
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-
-    @media screen and (min-width:1280px) {
-      padding-left: 68px;
-      padding-right: 68px;
-    }
+    padding-top: 24px;
+    padding-bottom: 32px;
+    
+      @media screen and (min-width:768px) {
+        padding-bottom: 40px;
+      }
   }
 
   &__title {
@@ -107,7 +102,17 @@
 
   &__btn {
     display: block;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid transparent;
+
+    @media screen and (min-width:768px) {
+      font-size: 20px;
+      line-height: calc(30 / 20);
+      min-width: 264px;
+      min-height: 58px;
+      padding: 14px 28px;
+    }
   }
 
 }
