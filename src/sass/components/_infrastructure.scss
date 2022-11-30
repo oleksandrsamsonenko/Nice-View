@@ -1,41 +1,20 @@
 .section.infrastructure {
   max-width: 1280px;
   background-color: #ede9e3;
-}
-
-.container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 480px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 60px;
-  padding-bottom: 40px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-top: 100px;
-    padding-left: 32px;
-    padding-right: 37px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 1102px;
-    padding-top: 124px;
-  }
 }
 
 .inf-title-wrapper {
   background-color: #ede9e3;
   padding-bottom: 24px;
 }
-
-.inf-body-wrapper {
-  padding-top: 40px;
+.inf__container {
   background-image: url(../images/infrastructure/mob_inf@1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-clip: border-box;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -54,6 +33,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    max-width: 1144px;
     padding-right: 124px;
     background-image: url(../images/infrastructure/dsc_inf@1x.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -62,6 +42,9 @@
       background-image: url(../images/infrastructure/dsc_inf@2x.jpg);
     }
   }
+}
+.inf-body-wrapper {
+  padding-top: 40px;
 }
 
 .inf__header {
