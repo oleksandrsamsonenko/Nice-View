@@ -1,12 +1,34 @@
 .contacts__title {
   text-align: center;
   margin-bottom: 8px;
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 500;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.5;
+  color: #7e6d53;
+
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
 }
 .contacts__subtitle {
   text-align: center;
   margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+  }
 }
 .contacts__menu {
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -16,22 +38,61 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 16px;
+  max-width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 700px;
+  }
 }
+
 .contacts__list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__link {
+  display: flex;
+  align-items: center;
   color: $white;
   opacity: 0.6;
   font-size: 14px;
   line-height: 1.5;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    // background-image: url('../images/svg-sprite.svg#map');
+    background-image: url('../images/icons/map.svg');
+    // background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='22' fill='none'%3e%3cpath stroke='%23FCFCFB' stroke-linecap='round' stroke-linejoin='round' d='M8 1.25A7.41 7.41 0 0 0 .59 8.66v.54c.3 4.06 3.67 7.325 7.41 11.55 3.905-4.41 7.41-7.75 7.41-12.09A7.41 7.41 0 0 0 8 1.25ZM8 5.1a3.565 3.565 0 1 1 0 7.13A3.565 3.565 0 0 1 8 5.1Z'/%3e%3c/svg%3e");
+    transform: translatex(-12px);
+    // fill: red;
+    // color: blue;
+    // stroke: cyan;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .contacts__button {
-  max-width: 240px;
+  max-width: 240;
 }

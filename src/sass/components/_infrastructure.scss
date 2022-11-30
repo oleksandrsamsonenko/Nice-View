@@ -7,9 +7,21 @@
 
 .inf-title-wrapper {
   background-color: #ede9e3;
+  padding-left: 20px;
   padding-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 68px;
+    padding-bottom: 20px;
+  }
 }
-.inf__container {
+.container.inf__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-image: url(../images/infrastructure/mob_inf@1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,6 +36,8 @@
   @media screen and (min-width: 768px) {
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 0;
+    padding-right: 37px;
     background-image: url(../images/infrastructure/tab_inf@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -34,7 +48,7 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 1144px;
-    padding-right: 124px;
+    padding-right: 168px;
     background-image: url(../images/infrastructure/dsc_inf@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -43,17 +57,12 @@
     }
   }
 }
-.inf-body-wrapper {
-  padding-top: 40px;
-}
 
 .inf__header {
-  font-family: 'Poppins', 'sans-serif';
   font-weight: 500;
   font-size: 28px;
   line-height: 1.5;
   color: #7e6d53;
-  margin: 0;
 
   @media screen and (min-width: 768px) {
     font-size: 40px;
@@ -109,6 +118,9 @@
   font-size: 14px;
   line-height: 1.5;
   color: #2d2a22;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .inf__subtitle {
@@ -117,4 +129,7 @@
   font-size: 14px;
   line-height: 1.5;
   color: #7e6d53;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
