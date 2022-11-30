@@ -1,8 +1,28 @@
-.hero {
-}
 .hero__title {
+  padding-top: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  text-align: center;
+
   font-weight: 400;
   font-size: 48px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 7px;
+    font-size: 72px;
+  }
+}
+.hero__text {
+  width: 184px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 246px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 484px;
+    margin-bottom: 383px;
+    font-size: 24px;
+  }
 }
