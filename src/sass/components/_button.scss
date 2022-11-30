@@ -1,8 +1,8 @@
 .btn-white-desk {
   font-family: 'Poppins';
   font-style: normal;
-  width: 256px;
-  height: 54px;
+  min-width: 256px;
+  min-height: 54px;
   padding: 9px 62px;
 
   font-weight: 300;
@@ -25,8 +25,8 @@
 }
 
 .btn-main-color-desk {
-  width: 264px;
-  height: 58px;
+  min-width: 264px;
+  min-height: 58px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -54,8 +54,8 @@
 }
 
 .btn-dark-desk {
-  width: 152px;
-  height: 40px;
+  min-width: 152px;
+  min-height: 40px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
@@ -82,8 +82,8 @@
 }
 
 .btn-dark-desk-small {
-  width: 224px;
-  height: 54px;
+  min-width: 224px;
+  min-height: 54px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
@@ -110,8 +110,8 @@
 }
 
 .btn-white-mobile {
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  min-height: 50px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -139,8 +139,8 @@
 }
 
 .btn-main-color-desk {
-  width: 240px;
-  height: 54px;
+  min-width: 240px;
+  min-height: 54px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -169,8 +169,8 @@
 }
 
 .btn-dark-mobile-small {
-  width: 240px;
-  height: 48px;
+  min-width: 240px;
+  min-height: 48px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
@@ -197,8 +197,8 @@
 }
 
 .btn-modal {
-  width: 224px;
-  height: 54px;
+  min-width: 224px;
+  min-height: 54px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -220,8 +220,8 @@
 }
 
 .btn-modal-small {
-  width: 192px;
-  height: 48px;
+  min-width: 192px;
+  min-height: 48px;
 
   font-family: 'Poppins';
   font-style: normal;
