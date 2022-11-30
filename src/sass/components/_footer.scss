@@ -1,0 +1,126 @@
+.footer {
+  //   padding-top: 20px;
+  //   padding-bottom: 8px;
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  color: $white;
+  background-color: $gorizontal-gradient;
+
+  &--link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    color: $white;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  //   gap: 40px;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 86px;
+    padding-right: 104px;
+  }
+}
+// new block
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    margin-bottom: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+// new block
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+// new block
+.address {
+  font-style: normal;
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+// new block
+.footer-media {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 28px;
+}
+.footer-media__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footer-media__item {
+  display: flex;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.footer-media__icon {
+  fill: $white;
+}
+// new block
+.footer-privacy {
+  display: flex;
+  justify-content: center;
+  &__descr {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: #979797;
+  }
+
+  &__link {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    // text-align: center;
+    text-decoration: underline;
+    color: $white;
+  }
+}
+.footer-privacy__link:first-child {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.footer-privacy__link:last-child {
+  margin-left: 5px;
+}
