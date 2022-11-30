@@ -2,20 +2,23 @@
   outline: 2px solid red;
   outline-offset: -2px;
 
-  max-width: $mobile;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  // mobile
+  @media screen and (min-width: 480px) {
+    max-width: $mobile;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    max-width: $tablet;
     padding-right: 16px;
     padding-left: 16px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    max-width: $desktop;
     padding-right: 15px;
     padding-left: 15px;
   }
