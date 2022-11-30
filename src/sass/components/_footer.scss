@@ -1,6 +1,11 @@
 .footer {
   color: $white;
   width: 100%;
+  background-image: linear-gradient(
+    269.46deg,
+    #2d2a22 20.66%,
+    $main-color 85.22%
+  );
 
   &--link {
     font-family: 'Inter';
@@ -12,6 +17,7 @@
   }
 }
 .footer__container {
+  width: 480px;
   padding-left: 20px;
   padding-right: 20px;
   background-image: $gorizontal-gradient;
