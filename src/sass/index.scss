@@ -1,16 +1,18 @@
 // ------------------UTILS STYLES----------------
 @import './utils/variables';
+@import './utils/breakpoints';
 
 // ------------------BASE STYLES-----------------
 @import './base/common';
 @import './base/container';
 @import './base/_reset';
 // ------------------COMPONENTS STYLES-----------
-@import './components/_about.scss';
+@import './components/about';
 @import './components/apartments';
-@import './components/_contacts.scss';
-@import './components/_footer.scss';
-@import './components/_gallery.scss';
-@import './components/_header.scss';
-@import './components/_hero.scss';
-@import './components/_infrastructure.scss';
+@import './components/contacts';
+@import './components/footer';
+@import './components/gallery';
+@import './components/header';
+@import './components/hero';
+@import './components/infrastructure';
+@import './components/button';
