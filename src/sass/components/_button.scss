@@ -1,6 +1,7 @@
 .btn-dark-desk {
+  display: block;
   min-width: 152px;
-  min-height: 40px;
+  height: 40px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
@@ -27,31 +28,28 @@
 }
 
 .btn-modal {
+  display: block;
   min-width: 224px;
-  min-height: 54px;
-
+  height: 54px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: calc(36 / 24);
   text-align: center;
-
   color: $light-color;
   background-color: $main-color;
-
   border: 0;
   border-radius: 8px;
-
   padding: 9px 46px;
   margin: 0;
-
   cursor: pointer;
 }
 
 .btn-modal-small {
+  display: block;
   min-width: 192px;
-  min-height: 48px;
+  height: 48px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -73,8 +71,9 @@
 }
 
 .btn-white {
+  display: block;
   min-width: 200px;
-  min-height: 50px;
+  height: 50px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -112,8 +111,9 @@
 }
 
 .btn-main-color {
+  display: block;
   min-width: 240px;
-  min-height: 54px;
+  height: 54px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -122,7 +122,7 @@
   text-align: center;
   color: $light-color;
   background-color: $main-color;
-  border: 1рх solid transparent;
+  border: 1px solid transparent;
   border-radius: 16px;
   padding: 13.5px 36.5px;
   margin: 0;
@@ -146,8 +146,9 @@
 }
 
 .btn-dark-small {
+  display: block;
   min-width: 240px;
-  min-height: 48px;
+  height: 48px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
@@ -156,14 +157,11 @@
   text-align: center;
   color: $main-color;
   background-color: $light-color;
-
-  border: 1рх solid transparent;
   border-radius: 8px;
-
-  padding: 12px 76px;
+  padding: 12px 75px;
   margin: 0;
-
   cursor: pointer;
+  border: 1px solid transparent;
 
   &:hover,
   &:focus {
@@ -175,10 +173,10 @@
   // tablet
   @media screen and (min-width: 768px) {
     min-width: 224px;
-    min-height: 54px;
+    height: 54px;
     font-size: 24px;
     line-height: calc(36 / 24);
 
-    padding: 9px 46px;
+    padding: 9px 45px;
   }
 }
