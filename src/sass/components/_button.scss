@@ -37,7 +37,7 @@
 
   background-color: $main-color;
 
-  border: 1рх transparent;
+  border: 1рх solid transparent;
   border-radius: 16px;
 
   padding: 14px 39.5px;
@@ -75,7 +75,7 @@
 
   &:hover,
   &:focus {
-    border: 1рх transparent;
+    border: 1рх solid transparent;
     color: $dark-color;
     background-color: $light-color;
   }
@@ -93,7 +93,7 @@
   color: $main-color;
   background-color: $light-color;
 
-  border: 1рх transparent;
+  border: 1рх solid transparent;
   border-radius: 8px;
 
   padding: 9px 46px;
@@ -152,7 +152,7 @@
   color: $light-color;
   background-color: $main-color;
 
-  border: 1рх transparent;
+  border: 1рх solid transparent;
   border-radius: 16px;
 
   padding: 13.5px 36.5px;
@@ -180,7 +180,7 @@
   color: $dark-color;
   background-color: $light-color;
 
-  border: 1рх transparent;
+  border: 1рх solid transparent;
   border-radius: 8px;
 
   padding: 12px 76px;
