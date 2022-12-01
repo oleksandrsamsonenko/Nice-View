@@ -131,10 +131,6 @@
   outline: none;
   padding: 16px;
 
-  &:not(last-child) {
-    margin-bottom: 20px;
-  }
-
   // desktop
   @media screen and (min-width: 768px) {
     width: 410px;
@@ -142,8 +138,13 @@
   }
 }
 
-.btn-modal {
+.btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
+}
+
+.modal-form-group:not(:last-child) {
+  margin-bottom: 20px;
 }
