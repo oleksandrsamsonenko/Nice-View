@@ -1,21 +1,34 @@
 .swiper {
   width: 600px;
   height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
-
-// .gallery__list {
-//   flax-wrap: no-wrap;
-//   display: flex;
-//   gap: 8px;
-//   @media screen and (min-width: 768px) {
-//     gap: 18px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     gap: 32px;
-//   }
-// }
-// .gallery__title {
-//   font-weight: 500;
-//   font-size: 40px;
-//   line-height: calc(60 / 40);
-// }
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transform: 3s opasity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
