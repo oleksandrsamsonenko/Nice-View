@@ -1,5 +1,8 @@
 .hero {
+  min-height: 491px;
   padding-top: 0;
+  padding-bottom: 0;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -51,7 +54,9 @@
   padding-top: 15px;
   margin-left: auto;
   margin-right: auto;
+
   text-align: center;
+
   font-weight: 400;
   font-size: 48px;
   line-height: calc(72 / 48);
@@ -62,6 +67,10 @@
     font-size: 72px;
     line-height: calc(108 / 72);
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 8px;
+  }
 }
 
 .hero__text {
@@ -69,12 +78,12 @@
   min-height: 48px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 246px;
+  padding-bottom: 246px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
     width: 484px;
-    margin-bottom: 383px;
+    padding-bottom: 383px;
     font-size: 24px;
   }
 }
