@@ -1,0 +1,104 @@
+.download-backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 25, 14, 0.758);
+    z-index: 1000;
+    animation: zoom 1s linear forwards;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        animation: zoom 1s linear forwards;
+    }
+}
+
+.download {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 562px;
+    height: 208px;
+    background-color: $background-color;
+    border-radius: 24px;
+    padding: 28px 40px;
+
+    &__btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: transparent;
+    }
+
+    &__icon {
+        fill: $main-color;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__img {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 70px;
+    }
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: calc(24 / 16);
+    }
+    
+    &__subtitle {
+        max-width: 249px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: calc(24 / 16);
+    }
+
+    &__input-wrapper {
+        position: relative;
+    }
+
+    &__input {
+        height: 32px;
+        width: 296px;
+        background-color: transparent;
+        border: 1px solid $main-color;
+        border-radius: 8px;
+
+        font-weight: 700;
+        font-size: 10px;
+        color: $dark-color;
+
+        padding-left: 16px;
+        padding-right: 60px;
+    }
+
+    &__send-icon {
+        fill: $main-color;
+        position: absolute;
+        top: 4px;
+        right: 16px;
+    }
+}
