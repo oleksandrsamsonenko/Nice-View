@@ -10,7 +10,7 @@
   padding: 0;
   z-index: 1;
 }
-.swiper-wrapper {
+.swiper__wrapper {
   position: relative;
   width: 100%;
   height: 100%;
@@ -19,13 +19,13 @@
   transition-property: transform;
   box-sizing: content-box;
 }
-.swiper-slide {
+.swiper__slide {
   flex-shrink: 0;
   height: 100%;
   position: relative;
   transition-property: transform;
 }
-.swiper-pagination {
+.swiper__pagination {
   position: absolute;
   text-align: center;
   transform: 3s opasity;
