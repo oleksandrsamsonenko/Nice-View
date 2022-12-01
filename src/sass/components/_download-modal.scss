@@ -123,17 +123,42 @@
         padding-right: 60px;
     }
 
-    &__send-icon {
-        @media screen and (max-width:767px) {
-            width: 17px;
-            height: 17px;
-            top: 7px;
+    &__send-btn {
+        width: 32px;
+        height: 32px;
+
+        background-color: transparent;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        cursor: pointer;
+
+        color: $main-color;
+
+        @media screen and (min-width:768px) {
             right: 10px;
         }
 
-        fill: $main-color;
-        position: absolute;
-        top: 4px;
-        right: 16px;
+        &:hover, &:focus {
+            color: $dark-color;
+        }
+    }
+
+    &__send-icon {
+        width: 17px;
+        height: 17px;
+    
+        fill: currentColor;
+
+        @media screen and (min-width:768px) {
+            width: 20px;
+        }
     }
 }
