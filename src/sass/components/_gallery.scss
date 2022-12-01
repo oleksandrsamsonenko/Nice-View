@@ -1,13 +1,6 @@
-.gallery {
+.gallery__list {
+  flax-wrap: no-wrap;
   display: flex;
-}
-.gallery__title {
-  padding: 50px;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 60px;
-}
-.gallery__photo {
   gap: 8px;
   @media screen and (min-width: 768px) {
     gap: 18px;
@@ -15,4 +8,9 @@
   @media screen and (min-width: 1280px) {
     gap: 32px;
   }
+}
+.gallery__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(60 / 40);
 }
