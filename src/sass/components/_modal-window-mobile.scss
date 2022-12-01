@@ -24,11 +24,15 @@
 .menu-container {
   width: 320px;
   height: 568px;
-  background-image: linear-gradient(336.93deg, #2d2a22 5.7%, #7e6d53 108.98%);
+  background-image: linear-gradient(
+    336.93deg,
+    $dark-color 5.7%,
+    $main-color 108.98%
+  );
 }
 
 .mobile-menu {
-  margin: 80px 108px 254px;
+  margin: 80px 108px auto;
 }
 
 .mobile-menu-item:not(:last-child) {
@@ -60,8 +64,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 48px 40px;
-  background-color: red;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
