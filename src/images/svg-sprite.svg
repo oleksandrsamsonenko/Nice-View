@@ -66,5 +66,11 @@
         <symbol id="burger" viewBox="0 0 32 32">
             <path d="M4 5.333h24V8H4V5.333zm0 9.334h24v2.667H4v-2.667zM4 24h24v2.667H4V24z" />
         </symbol>
+
+        <!-- modal window -->
+        <symbol id="modal-close" viewBox="0 0 32 32">
+            <path
+                d="m15 13.232 6.187-6.187 1.768 1.767L16.767 15l6.188 6.187-1.768 1.768L15 16.767l-6.188 6.188-1.767-1.768L13.232 15 7.045 8.812l1.767-1.767L15 13.232Z" />
+        </symbol>
     </defs>
 </svg>
