@@ -131,6 +131,14 @@
   outline: none;
   padding: 16px;
 
+  &:not(:placeholder-shown):required:valid {
+    border: 1px solid #35322d;
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    background-color: #dfb591;
+  }
+
   // desktop
   @media screen and (min-width: 768px) {
     width: 410px;
