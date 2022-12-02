@@ -1,10 +1,12 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, EffectCoverflow } from 'swiper';
 
 const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, EffectCoverflow],
   // Optional parameters
   loop: true,
+  slidesPerView: 3,
+  autoHeight: true,
 
   // If we need pagination
   pagination: {
@@ -17,8 +19,10 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 0,
+    slideShadows: false,
+    scale: 0.6,
   },
 });
