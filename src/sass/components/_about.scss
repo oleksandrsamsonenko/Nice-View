@@ -44,7 +44,7 @@
 .about__container {
   position: relative;
   padding-bottom: 100px;
-  min-height: 677px;
+  height: 677px;
   max-width: $mobile;
   padding-right: 20px;
   padding-left: 20px;
@@ -53,6 +53,7 @@
 
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
+    height: 630px;
     padding-right: 32px;
     padding-left: 32px;
   }
@@ -73,11 +74,6 @@
   left: 0;
   background: #fcfcfb;
   opacity: 0.9;
-
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1280px) {
-  }
 }
 .about__wrapper {
   max-width: 480px;
@@ -103,9 +99,9 @@
     max-width: 1280px;
     padding-left: 134px;
     padding-right: 134px;
-    padding-bottom: 24px;
+    padding-bottom: 44px;
     padding-top: 44px;
-    gap: 118px;
+    gap: 122px;
   }
 }
 
@@ -135,12 +131,12 @@
   @media screen and (min-width: 768px) {
     width: 50%;
     margin-bottom: 0;
-    gap: 60px;
+    gap: 32px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 60%;
-    gap: 72px;
+    width: 500px;
+    gap: 27px;
     margin-right: auto;
   }
 }
@@ -152,13 +148,21 @@
   flex-basis: calc((100% - 20px * 1) / 2);
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px * 1) / 2);
+    flex-basis: calc((100% - 32px * 1) / 2);
+    margin-bottom: 28px;
   }
 
   @media screen and (min-width: 1280px) {
-    flex-basis: calc((100% - 72px * 1) / 2);
+    flex-basis: calc((100% - 27px * 1) / 2);
+    margin-bottom: 65px;
   }
 
+  &:last-child,
+  &:nth-last-child(2) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
   &:first-child::before {
     content: url(../images/icons/about_icon1.png);
     width: 32px;
@@ -194,7 +198,7 @@
     width: 50%;
   }
   @media screen and (min-width: 1280px) {
-    width: 40%;
+    width: 393px;
   }
 }
 
@@ -211,9 +215,4 @@
 }
 
 .about__text {
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 20px;
-  }
 }
