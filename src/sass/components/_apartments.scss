@@ -5,10 +5,10 @@
   &__wrapper {
     padding-top: 24px;
     padding-bottom: 32px;
-    
-      @media screen and (min-width:768px) {
-        padding-bottom: 40px;
-      }
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 40px;
+    }
   }
 
   &__title {
@@ -17,11 +17,11 @@
     text-align: start;
     max-width: 280px;
 
-    @media screen and (min-width:480px) {
+    @media screen and (min-width: 480px) {
       max-width: 100%;
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       font-size: 40px;
       margin-bottom: 40px;
     }
@@ -36,8 +36,7 @@
     justify-content: center;
     align-items: center;
 
-
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       flex-direction: row;
       gap: 32px;
     }
@@ -45,19 +44,6 @@
 
   &__item {
     height: 383px;
-    width: calc((100% - 0 * 32px) / 1);
-
-    @media screen and (min-width:768px) {
-      height: 393px;
-      width: calc((100% - 1 * 32px) / 2);
-    }
-
-    @media screen and (min-width:1280px) {
-      width: calc((100% - 2 * 35px) / 3);
-    }
-  }
-
-  &__link {
     padding: 20px 32px;
     border: 2px solid transparent;
 
@@ -73,6 +59,16 @@
     align-items: center;
     justify-content: center;
     gap: 14px;
+    width: calc((100% - 0 * 32px) / 1);
+
+    @media screen and (min-width: 768px) {
+      height: 393px;
+      width: calc((100% - 1 * 32px) / 2);
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: calc((100% - 2 * 35px) / 3);
+    }
   }
 
   &__img {
@@ -85,17 +81,16 @@
     line-height: calc(34 / 28);
     color: $dark-color;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       font-size: 32px;
     }
-
   }
 
   &__desc {
     font-size: 20px;
     line-height: calc(26 / 20);
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       font-size: 24px;
     }
   }
@@ -104,15 +99,5 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    border: 1px solid transparent;
-
-    @media screen and (min-width:768px) {
-      font-size: 20px;
-      line-height: calc(30 / 20);
-      min-width: 264px;
-      min-height: 58px;
-      padding: 14px 28px;
-    }
   }
-
 }

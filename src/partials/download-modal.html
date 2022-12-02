@@ -16,10 +16,15 @@
                 <p class="download__subtitle">We will send you more photos,
                     videos and information by mail</p>
                 <div class="download__input-wrapper">
-                    <input class="download__input" type="email" name="email" id="email" placeholder="Email address">
-                    <svg class="download__send-icon" width="24" height="24">
-                        <use href="images/svg-sprite.svg#send-mail"></use>
-                    </svg>
+                    <form>
+                        <input class="download__input" type="email" name="email" placeholder="Email address" required
+                            minlength="5" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <button class="download__send-btn" type="submit">
+                            <svg class="download__send-icon" width="24" height="24">
+                                <use href="images/svg-sprite.svg#send-mail"></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
