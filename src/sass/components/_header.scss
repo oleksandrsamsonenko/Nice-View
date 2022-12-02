@@ -22,7 +22,8 @@
   }
 }
 .logo {
-  animation: slit-in-horizontal 0.45s ease-out both;
+
+  animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 
   // tablet
   @media screen and (min-width: 768px) {
@@ -71,6 +72,8 @@
 }
 
 .btn-dark-desk {
+  animation: flicker-2 4s linear 1s infinite both;
+
   @media screen and (max-width: 1279px) {
     display: none;
   }
@@ -78,21 +81,78 @@
 
 
 
-@keyframes slit-in-horizontal {
+@keyframes puff-in-center {
   0% {
-    -webkit-transform: translateZ(-800px) rotateX(90deg);
-    transform: translateZ(-800px) rotateX(90deg);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
     opacity: 0;
   }
 
-  54% {
-    -webkit-transform: translateZ(-160px) rotateX(87deg);
-    transform: translateZ(-160px) rotateX(87deg);
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes flicker-2 {
+
+  0%,
+  100% {
     opacity: 1;
   }
 
-  100% {
-    -webkit-transform: translateZ(0) rotateX(0);
-    transform: translateZ(0) rotateX(0);
+  41.99% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  43% {
+    opacity: 0;
+  }
+
+  43.01% {
+    opacity: 1;
+  }
+
+  45.99% {
+    opacity: 1;
+  }
+
+  46% {
+    opacity: 0;
+  }
+
+  46.9% {
+    opacity: 0;
+  }
+
+  46.91% {
+    opacity: 1;
+  }
+
+  51.99% {
+    opacity: 1;
+  }
+
+  52% {
+    opacity: 0;
+  }
+
+  52.8% {
+    opacity: 0;
+  }
+
+  52.81% {
+    opacity: 1;
   }
 }
