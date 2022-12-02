@@ -22,6 +22,8 @@
   }
 }
 .logo {
+  animation: slit-in-horizontal 0.45s ease-out both;
+
   // tablet
   @media screen and (min-width: 768px) {
     margin: 22px 0;
@@ -71,5 +73,26 @@
 .btn-dark-desk {
   @media screen and (max-width: 1279px) {
     display: none;
+  }
+}
+
+
+
+@keyframes slit-in-horizontal {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateX(90deg);
+    transform: translateZ(-800px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  54% {
+    -webkit-transform: translateZ(-160px) rotateX(87deg);
+    transform: translateZ(-160px) rotateX(87deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0);
   }
 }

@@ -51,8 +51,11 @@
     &:hover,
     &:focus {
       border: 2px solid $main-color;
-      filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.15));
+      filter: drop-shadow(0px 4px 25px rgba(52, 15, 8, 0.217));
+      box-shadow: rgba(52, 15, 8, 0.114) 0px 4px 12px;
       border-radius: 16px;
+      transform: scale(1.03);
+      transition-duration: 150ms;
     }
 
     display: flex;
