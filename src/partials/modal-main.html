@@ -13,23 +13,22 @@
                 <label class="modal-form-label" for="user_name">Name</label>
                 <div class="modal-form-group">
                     <input class="modal-form-field" type="text" name="user_name" id="user_name" placeholder="Yuliia"
-                        required minlength="2">
+                        required minlength="2" maxlength="30">
 
                 </div>
 
                 <label class="modal-form-label">Telephone</label>
                 <div class="modal-form-group">
                     <input class="modal-form-field" type="text" name="user_phone" id="user_phone" placeholder="+380"
-                        required minlength="10">
+                        required minlength="13" maxlength="13">
 
                 </div>
 
                 <label class="modal-form-label">Email</label>
                 <div class="modal-form-group">
                     <input class="modal-form-field" type="text" name="user_email" id="user_email"
-                        placeholder="Contact@gmail.com" required minlength="5"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-
+                        placeholder="Contact@gmail.com" required
+                        pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
                 </div>
 
                 <button class="btn-modal btn" type="submit">Contact us</button>
