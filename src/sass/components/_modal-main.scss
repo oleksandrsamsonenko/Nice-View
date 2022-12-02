@@ -136,7 +136,8 @@
   }
 
   &:not(:placeholder-shown):required:invalid {
-    background-color: #dfb591;
+    // background-color: #dfb591;
+    border: 1px solid red;
   }
 
   // desktop
