@@ -1,8 +1,8 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, EffectCoverflow } from 'swiper';
 
 const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, EffectCoverflow],
   // Optional parameters
   loop: true,
 

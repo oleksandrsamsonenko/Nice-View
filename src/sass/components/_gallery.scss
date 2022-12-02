@@ -1,6 +1,7 @@
 .swiper {
   width: 600px;
   height: 300px;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +29,7 @@
 .swiper__pagination {
   position: absolute;
   text-align: center;
-  transform: 3s opasity;
+  // transform: opasity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
 }
