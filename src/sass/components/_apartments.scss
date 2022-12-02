@@ -44,19 +44,6 @@
 
   &__item {
     height: 383px;
-    width: calc((100% - 0 * 32px) / 1);
-
-    @media screen and (min-width: 768px) {
-      height: 393px;
-      width: calc((100% - 1 * 32px) / 2);
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: calc((100% - 2 * 35px) / 3);
-    }
-  }
-
-  &__link {
     padding: 20px 32px;
     border: 2px solid transparent;
 
@@ -72,6 +59,16 @@
     align-items: center;
     justify-content: center;
     gap: 14px;
+    width: calc((100% - 0 * 32px) / 1);
+
+    @media screen and (min-width: 768px) {
+      height: 393px;
+      width: calc((100% - 1 * 32px) / 2);
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: calc((100% - 2 * 35px) / 3);
+    }
   }
 
   &__img {
