@@ -1,14 +1,16 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[house-modal-open]"),
-    closeModalBtn: document.querySelector("[house-modal-close]"),
-    modal: document.querySelector("[house-modal]"),
+    apartmentCards: document.querySelectorAll('[data-apartments]'),
+    closeModalBtn: document.querySelector('[house-modal-close]'),
+    modal: document.querySelector('[house-modal]'),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.apartmentCards.forEach(apartmentCard =>
+    apartmentCard.addEventListener('click', toggleModal)
+  );
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+    refs.modal.classList.toggle('is-hidden');
   }
 })();
