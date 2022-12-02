@@ -47,13 +47,13 @@
   padding: 12px 52px;
   margin: 0;
   cursor: pointer;
-  
-    &:hover,
-    &:focus {
-      box-shadow: rgba(32, 10, 2, 0.251) 0px 4px 12px;
-      transform: scale(1.03);
-      transition-duration: 150ms;
-    }
+
+  &:hover,
+  &:focus {
+    box-shadow: rgba(32, 10, 2, 0.251) 0px 4px 12px;
+    transform: scale(1.03);
+    transition-duration: 150ms;
+  }
 
   @media screen and (min-width: 768px) {
     min-width: 224px;
