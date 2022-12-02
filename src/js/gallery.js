@@ -5,6 +5,8 @@ const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination, EffectCoverflow],
   // Optional parameters
   loop: true,
+  slidesPerView: 3,
+  autoHeight: true,
 
   // If we need pagination
   pagination: {
@@ -15,5 +17,12 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 0,
+    slideShadows: false,
+    scale: 0.6,
   },
 });
