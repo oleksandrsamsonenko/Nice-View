@@ -1,8 +1,8 @@
 (() => {
   const refs = {
     apartmentCards: document.querySelectorAll('[data-apartments]'),
-    closeModalBtn: document.querySelector('[house-modal-close]'),
-    modal: document.querySelector('[house-modal]'),
+    closeModalBtn: document.querySelector('[data-house-modal-close]'),
+    modal: document.querySelector('[data-house-modal]'),
   };
 
   refs.apartmentCards.forEach(apartmentCard =>
