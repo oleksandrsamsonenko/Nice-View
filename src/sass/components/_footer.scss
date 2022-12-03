@@ -36,6 +36,7 @@
 // new block
 .footer-logo {
   display: none;
+    animation: pulsate-fwd 8s ease-in-out 1s infinite both;
 
   @media screen and (min-width: $tablet) {
     display: block;
@@ -50,6 +51,7 @@
     margin-left: 58px;
   }
 }
+
 .footer-logo__icon {
   fill: $white;
 }
@@ -83,6 +85,11 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 16px;
   }
+  
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 7px 7px rgba(254, 253, 253, 0.755));
+  }
 }
 // new block
 .footer-contacts {
@@ -111,6 +118,11 @@
   overflow-wrap: break-word;
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 7px 7px rgba(254, 253, 253, 0.755));
   }
 }
 
