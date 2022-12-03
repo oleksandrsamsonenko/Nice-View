@@ -4,6 +4,12 @@
     $dark-color 20.66%,
     $main-color 85.22%
   );
+
+  @media screen and (max-width: 767px) {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
 }
 
 .header__container {
@@ -22,6 +28,8 @@
   }
 }
 .logo {
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+
   // tablet
   @media screen and (min-width: 768px) {
     margin: 22px 0;
@@ -69,7 +77,64 @@
 }
 
 .btn-dark-desk {
+  animation: wiggle 2s linear infinite 2s;
+
+  &:hover,
+  &:focus {
+    animation: paused;
+  }
+
   @media screen and (max-width: 1279px) {
     display: none;
+  }
+}
+
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+
+  15% {
+    transform: rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  30% {
+    transform: rotateZ(6deg);
+  }
+
+  35% {
+    transform: rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+    transform: rotateZ(0);
   }
 }
