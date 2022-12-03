@@ -28,7 +28,7 @@
   }
 }
 .logo {
-  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both, pulsate-fwd 3.5s ease-in-out 1s infinite both;
 
   // tablet
   @media screen and (min-width: 768px) {
@@ -136,5 +136,22 @@
   40%,
   100% {
     transform: rotateZ(0);
+  }
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
