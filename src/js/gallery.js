@@ -5,24 +5,37 @@ const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination, EffectCoverflow],
   // Optional parameters
   loop: true,
-  slidesPerView: 3,
-  autoHeight: true,
+  slidesPerView: 2,
+  centeredSlides: true,
 
-  // If we need pagination
+  // Pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
-  // Navigation arrows
+  // Navigation
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    enabled: false,
   },
 
+  // Coverflow Effect
   effect: 'coverflow',
   coverflowEffect: {
+    depth: 350,
     rotate: 0,
     slideShadows: false,
     scale: 0.6,
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    768: {
+      navigation: {
+        enabled: true,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    },
   },
 });
