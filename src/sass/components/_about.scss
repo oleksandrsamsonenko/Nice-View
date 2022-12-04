@@ -46,48 +46,12 @@
   }
 }
 
-.about__container {
-  // padding-bottom: 100px;
-  // height: 677px;
-  max-width: $mobile;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: $tablet) {
-    max-width: $tablet;
-    // height: 630px;
-    padding-right: 32px;
-    padding-left: 32px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    max-width: $desktop;
-    padding-right: 68px;
-    padding-left: 68px;
-  }
-}
-
 .about__box {
-  margin-left: auto;
-  margin-right: auto;
-  top: 59px;
-  left: 0;
   background: #fcfcfb;
   opacity: 0.9;
-
-  @media screen and (min-width: 768px) {
-    top: 99px;
-  }
 }
 
 .about__wrapper {
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -95,15 +59,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 768px;
+
     gap: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
+
     padding-top: 40px;
     padding-bottom: 40px;
   }
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
     padding-left: 134px;
     padding-right: 134px;
     padding-bottom: 44px;
@@ -193,11 +155,6 @@
   }
 }
 
-.about__icon {
-  margin-bottom: 24px;
-  fill: #2d2a22;
-}
-
 .about__right {
   @media screen and (min-width: 768px) {
     width: 50%;
@@ -213,8 +170,6 @@
   line-height: 1.5;
 
   @media screen and (min-width: 768px) {
-    font-weight: 300;
     font-size: 16px;
-    line-height: 1.5;
   }
 }
