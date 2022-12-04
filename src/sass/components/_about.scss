@@ -1,6 +1,5 @@
 .about {
   padding-bottom: 60px;
-  position: relative;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 100px;
@@ -11,7 +10,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+  height: 677px;
   background-image: url('../images/philosophy/mob_ph@1x.jpg');
 
   // mobile retina
@@ -23,6 +22,7 @@
 
   // tablet
   @media screen and (min-width: 768px) {
+    height: 630px;
     background-image: url('../images/philosophy/tab_ph@1x.jpg');
 
     // tablet retina
@@ -47,9 +47,8 @@
 }
 
 .about__container {
-  position: relative;
-  padding-bottom: 100px;
-  height: 677px;
+  // padding-bottom: 100px;
+  // height: 677px;
   max-width: $mobile;
   padding-right: 20px;
   padding-left: 20px;
@@ -58,7 +57,7 @@
 
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
-    height: 630px;
+    // height: 630px;
     padding-right: 32px;
     padding-left: 32px;
   }
@@ -71,7 +70,6 @@
 }
 
 .about__box {
-  position: absolute;
   margin-left: auto;
   margin-right: auto;
   top: 59px;
