@@ -78,17 +78,20 @@
   display: flex;
   flex-direction: column;
 }
+
 .footer-navigation__item {
   &:not(:last-child) {
     margin-bottom: 16px;
-  }
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 16px;
+    transition-property: filter;
   }
 
   &:hover,
   &:focus {
     filter: drop-shadow(0px 7px 7px rgba(254, 253, 253, 0.755));
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 16px;
   }
 }
 // new block
@@ -118,6 +121,7 @@
   overflow-wrap: break-word;
   &:not(:last-child) {
     margin-bottom: 16px;
+    transition-property: filter;
   }
 
   &:hover,
