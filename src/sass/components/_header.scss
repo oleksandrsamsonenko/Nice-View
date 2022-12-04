@@ -30,6 +30,7 @@
 
 .logo {
   padding: 12px 0;
+
   animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both,
     pulsate-fwd 4s ease-in-out 1s infinite both;
   transition-property: filter;
@@ -37,6 +38,18 @@
   &:hover,
   &:focus {
     filter: drop-shadow(0px 10px 13px rgba(254, 253, 253, 0.755));
+  }
+
+  transition-property: all;
+
+  &:hover,
+  &:focus {
+    animation-name: rotate-logo;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-delay: 300ms;
+    animation-iteration-count: infinite;
+    border: 1px solid fff;
   }
 
   // tablet
@@ -161,5 +174,28 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+// поворот лого при ховере
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }
