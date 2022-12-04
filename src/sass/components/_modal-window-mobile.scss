@@ -49,6 +49,11 @@
   line-height: calc(19 / 16);
   text-align: center;
   color: $light-color;
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 10px 13px rgba(254, 253, 253, 0.755));
+  }
 }
 
 .menu-container .menu-toggle {
