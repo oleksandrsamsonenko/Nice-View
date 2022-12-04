@@ -19,13 +19,15 @@
 
   cursor: pointer;
 
+  transition-duration: 150ms;
+  transition-property: border, color, background-color, transform;
+
   &:hover,
   &:focus {
     border: 1рх solid transparent;
     color: $dark-color;
     background-color: $light-color;
     transform: scale(1.02);
-    transition-duration: 150ms;
   }
 }
 
@@ -48,11 +50,13 @@
   margin: 0;
   cursor: pointer;
 
+  transition-duration: 150ms;
+  transition-property: box-shadow, transform;
+
   &:hover,
   &:focus {
     box-shadow: rgba(32, 10, 2, 0.251) 0px 4px 12px;
     transform: scale(1.03);
-    transition-duration: 150ms;
   }
 
   @media screen and (min-width: 768px) {
@@ -87,12 +91,14 @@
 
   cursor: pointer;
 
+  transition-duration: 150ms;
+  transition-property: color, background-color, transform;
+
   &:hover,
   &:focus {
     color: $light-color;
     background-color: $main-color;
     transform: scale(1.02);
-    transition-duration: 150ms;
   }
 
   // tablet
@@ -124,13 +130,15 @@
   margin: 0;
   cursor: pointer;
 
+  transition-duration: 150ms;
+  transition-property: border, color, background-color, transform;
+
   &:hover,
   &:focus {
     border: 1px solid $main-color;
     color: $main-color;
     background-color: $light-color;
     transform: scale(1.02);
-    transition-duration: 150ms;
   }
 
   // tablet
@@ -160,6 +168,8 @@
   margin: 0;
   cursor: pointer;
   border: 1px solid transparent;
+  transition-duration: 150ms;
+  transition-property: border, color, background-color, transform;
 
   &:hover,
   &:focus {
@@ -167,7 +177,6 @@
     color: $light-color;
     background-color: $main-color;
     transform: scale(1.02);
-    transition-duration: 150ms;
   }
 
   // tablet
