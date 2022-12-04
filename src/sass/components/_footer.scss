@@ -15,6 +15,7 @@
 .footer__container {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
@@ -26,7 +27,6 @@
   }
 }
 .footer__wrapper {
-  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   @media screen and (min-width: $tablet) {
@@ -36,7 +36,7 @@
 // new block
 .footer-logo {
   display: none;
-    animation: pulsate-fwd 8s ease-in-out 1s infinite both;
+  animation: pulsate-fwd 8s ease-in-out 1s infinite both;
 
   @media screen and (min-width: $tablet) {
     display: block;
@@ -85,7 +85,7 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 16px;
   }
-  
+
   &:hover,
   &:focus {
     filter: drop-shadow(0px 7px 7px rgba(254, 253, 253, 0.755));
@@ -131,6 +131,7 @@
   display: flex;
   justify-content: end;
   margin-top: 28px;
+
   @media screen and (min-width: $tablet) {
     width: 25%;
     margin-top: 0;
@@ -140,7 +141,7 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
-  margin-right: 20px;
+  margin-right: 0;
 
   @media screen and (min-width: $tablet) {
     flex-direction: column;
