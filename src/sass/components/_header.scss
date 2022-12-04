@@ -28,7 +28,7 @@
   }
 }
 .logo {
-  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both, pulsate-fwd 4s ease-in-out 1s infinite both;
 
   // tablet
   @media screen and (min-width: 768px) {
@@ -74,6 +74,11 @@
   @media screen and (min-width: 1280px) {
     margin-right: 48px;
   }
+
+    &:hover,
+    &:focus {
+      filter: drop-shadow(0px 10px 13px rgba(254, 253, 253, 0.755));
+    }
 }
 
 .btn-dark-desk {
@@ -136,5 +141,18 @@
   40%,
   100% {
     transform: rotateZ(0);
+  }
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
   }
 }
