@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://WestEagle-PS.github.io/team-project1-HTML-CSS-",
+  "homepage": "https://WestEagle-PS.github.io/Nice-View",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project1-HTML-CSS-/"
+    "build": "parcel build src/*.html --public-url /Nice-View/"
   },
   "repository": {
     "type": "git",
